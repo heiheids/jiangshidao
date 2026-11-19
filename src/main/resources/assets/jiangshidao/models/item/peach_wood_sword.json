@@ -1,0 +1,1855 @@
+{
+  "credit": "作者：黑山大叔  主页：https://space.bilibili.com/19428259  GitHub：https://github.com/heiheids",
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        -105,
+        -90,
+        90
+      ],
+      "translation": [
+        0,
+        4,
+        0.5
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        -105,
+        90,
+        -90
+      ],
+      "translation": [
+        0,
+        4,
+        0.5
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -105,
+        -90,
+        90
+      ],
+      "translation": [
+        1.13,
+        3.2,
+        1.13
+      ],
+      "scale": [
+        0.72,
+        0.72,
+        0.72
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -105,
+        90,
+        -90
+      ],
+      "translation": [
+        1.13,
+        3.2,
+        1.13
+      ],
+      "scale": [
+        0.72,
+        0.72,
+        0.72
+      ]
+    },
+    "gui": {
+      "rotation": [
+        0,
+        -45,
+        45
+      ],
+      "translation": [
+        -1.2,
+        1.6,
+        0
+      ],
+      "scale": [
+        0.78,
+        0.78,
+        0.78
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "textures": {
+    "sword": "jiangshidao:item/peach_wood_sword",
+    "particle": "jiangshidao:item/peach_wood_sword"
+  },
+  "elements": [
+    {
+      "from": [
+        7.72,
+        -2.5,
+        7.72
+      ],
+      "to": [
+        8.28,
+        -2,
+        8.28
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tip0"
+    },
+    {
+      "from": [
+        7.25,
+        -2,
+        7.62
+      ],
+      "to": [
+        8.75,
+        -1.4,
+        8.39
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tip1"
+    },
+    {
+      "from": [
+        6.5,
+        -1.2,
+        7.45
+      ],
+      "to": [
+        9.5,
+        11.5,
+        8.55
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "blade"
+    },
+    {
+      "from": [
+        9.5,
+        -1.2,
+        7.53
+      ],
+      "to": [
+        9.92,
+        0.39,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_r0"
+    },
+    {
+      "from": [
+        6.31,
+        -1.2,
+        7.53
+      ],
+      "to": [
+        6.5,
+        0.39,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_l0"
+    },
+    {
+      "from": [
+        9.5,
+        0.39,
+        7.53
+      ],
+      "to": [
+        9.69,
+        1.97,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_r1"
+    },
+    {
+      "from": [
+        6.08,
+        0.39,
+        7.53
+      ],
+      "to": [
+        6.5,
+        1.97,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_l1"
+    },
+    {
+      "from": [
+        9.5,
+        1.97,
+        7.53
+      ],
+      "to": [
+        9.92,
+        3.56,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_r2"
+    },
+    {
+      "from": [
+        6.31,
+        1.97,
+        7.53
+      ],
+      "to": [
+        6.5,
+        3.56,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_l2"
+    },
+    {
+      "from": [
+        9.5,
+        3.56,
+        7.53
+      ],
+      "to": [
+        9.69,
+        5.15,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_r3"
+    },
+    {
+      "from": [
+        6.08,
+        3.56,
+        7.53
+      ],
+      "to": [
+        6.5,
+        5.15,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_l3"
+    },
+    {
+      "from": [
+        9.5,
+        5.15,
+        7.53
+      ],
+      "to": [
+        9.92,
+        6.74,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_r4"
+    },
+    {
+      "from": [
+        6.31,
+        5.15,
+        7.53
+      ],
+      "to": [
+        6.5,
+        6.74,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_l4"
+    },
+    {
+      "from": [
+        9.5,
+        6.74,
+        7.53
+      ],
+      "to": [
+        9.69,
+        8.33,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_r5"
+    },
+    {
+      "from": [
+        6.08,
+        6.74,
+        7.53
+      ],
+      "to": [
+        6.5,
+        8.33,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_l5"
+    },
+    {
+      "from": [
+        9.5,
+        8.32,
+        7.53
+      ],
+      "to": [
+        9.92,
+        9.91,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_r6"
+    },
+    {
+      "from": [
+        6.31,
+        8.32,
+        7.53
+      ],
+      "to": [
+        6.5,
+        9.91,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_l6"
+    },
+    {
+      "from": [
+        9.5,
+        9.91,
+        7.53
+      ],
+      "to": [
+        9.69,
+        11.5,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_r7"
+    },
+    {
+      "from": [
+        6.08,
+        9.91,
+        7.53
+      ],
+      "to": [
+        6.5,
+        11.5,
+        8.47
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            11
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "tooth_l7"
+    },
+    {
+      "from": [
+        7.1,
+        1.7,
+        7.41
+      ],
+      "to": [
+        8.9,
+        6.1,
+        7.49
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            10,
+            6,
+            16
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            0,
+            10,
+            6,
+            16
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            0,
+            10,
+            6,
+            16
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            0,
+            10,
+            6,
+            16
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            0,
+            10,
+            6,
+            16
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            0,
+            10,
+            6,
+            16
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "talisman"
+    },
+    {
+      "from": [
+        4.8,
+        11.35,
+        7.2
+      ],
+      "to": [
+        11.2,
+        13.05,
+        8.8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "guard"
+    },
+    {
+      "from": [
+        4.1,
+        11.1,
+        7
+      ],
+      "to": [
+        5.8,
+        13.3,
+        9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "guard_l"
+    },
+    {
+      "from": [
+        10.2,
+        11.1,
+        7
+      ],
+      "to": [
+        11.9,
+        13.3,
+        9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "guard_r"
+    },
+    {
+      "from": [
+        7.05,
+        12.75,
+        7.05
+      ],
+      "to": [
+        8.95,
+        16.85,
+        8.95
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            10,
+            0,
+            14,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            10,
+            0,
+            14,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            10,
+            0,
+            14,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            10,
+            0,
+            14,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            10,
+            0,
+            14,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            10,
+            0,
+            14,
+            6
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "grip"
+    },
+    {
+      "from": [
+        6.65,
+        16.55,
+        6.65
+      ],
+      "to": [
+        9.35,
+        18.5,
+        9.35
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "south": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "east": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "up": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        },
+        "down": {
+          "uv": [
+            6,
+            0,
+            10,
+            6
+          ],
+          "texture": "#sword"
+        }
+      },
+      "name": "pommel"
+    }
+  ]
+}

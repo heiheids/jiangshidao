@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "jiangshidao:block/talisman_paper", "y": 0 },
+    "facing=east":  { "model": "jiangshidao:block/talisman_paper", "y": 90 },
+    "facing=south": { "model": "jiangshidao:block/talisman_paper", "y": 180 },
+    "facing=west":  { "model": "jiangshidao:block/talisman_paper", "y": 270 }
+  }
+}

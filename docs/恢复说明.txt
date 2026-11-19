@@ -1,0 +1,95 @@
+僵尸道模组（Jiangshi Dao）— 源码恢复说明
+=================================================
+作者:黑山大叔
+主页:https://space.bilibili.com/19428259
+github：https://github.com/heiheids
+
+恢复日期：2026-11-17
+恢复来源：mod/jiangshidao26.3-Fabric-2.0.0-fabric.jar（516 KB，419 条目）
+
+-------------------------------------------------
+一、恢复范围
+-------------------------------------------------
+本次只恢复 26.3 Fabric 这一支；另两个成品分置于 mod/ 目录，暂不处理：
+  · jiangshidao-263-NeoForge-2.0.0.jar（121 类，缺 client 渲染实现等，独有 7 类）
+  · jiangshidao1.21.1-NeoForge-1.54.0.jar（137 类，旧世代）
+两份的独有类清单已记录在案，日后需要移植 NeoForge 时以 Fabric 这套为基准补差异。
+
+-------------------------------------------------
+二、恢复方法
+-------------------------------------------------
+1. 用 Vineflower 1.12.0 反编译全部 167 个 class，得到 137 个 .java。
+   （内部类被内联，故 167 → 137）
+2. 资源 199 个（assets / data / META-INF / fabric.mod.json / mixins / pack.mcmeta）
+   按原路径原样解包，未做任何改写。
+3. 依 fabric.mod.json 重建构建配置：Loom 1.18.4 + MC 26.3 + Fabric API 0.162.0+26.3。
+4. 编译修复 22 处错误后通过；产物 class/资源数量与原成品完全一致。
+
+-------------------------------------------------
+三、编译修复清单（22 处，供日后排查参考）
+-------------------------------------------------
+· mixin/LivingEntitySubduedMixin、ZombieConversionMixin、ZombieVillagerCureMixin
+  6 处：(Target) this 无法编译，还原为 (Target)(Object) this —— 反编译折叠了中间转换。
+· registry/ModDataComponents 4 处：DataComponentType.builder() 丢失泛型实参，
+  补 <Boolean> / <Integer> / <List<ItemStack>> / <CompoundTag> 类型见证。
+· registry/ModEntities 9 处：EntityType.Builder.of(...) 丢失类型见证，
+  补 Builder.<X>of(...)；否则推论成 EntityType<Entity>。
+· registry/ModMenus 2 处：new MenuType(...) / new ExtendedMenuType(...) 缺菱形运算符，
+  导致 lambda 参数被擦成 Object。
+· registry/ModBlocks 1 处：静态字段初始化器内用简单名自引用，改限定名 ModBlocks.XXX。
+· entity/GhostWomanEntity 1 处：MoveControl.Operation 是 protected 成员类型，
+  import 非法；删掉 import，在子类 GhostMoveControl 内直接用继承来的简单名。
+· client/ClientRenderers 1 处：通配渲染器赋给 RenderLayerParent<AvatarRenderState,PlayerModel>，
+  补 (Object) 中间强制转换。
+
+-------------------------------------------------
+四、构建环境的两个坑（务必记住）
+-------------------------------------------------
+坑 A：代理
+  本机 ~/.gradle/gradle.properties 里写死了 systemProp.http.proxyHost=127.0.0.1:10808。
+  该代理（v2rayN）未启动时，Gradle 会表现为“插件找不到 / 依赖解析失败”，
+  极易误判为仓库问题。绕过：
+    .\gradlew.bat build "-Dhttp.nonProxyHosts=*" "-Dhttps.nonProxyHosts=*"
+
+坑 B：26.3 不再混淆
+  官方 26.3 版本清单只有 downloads.client / downloads.server，没有 mappings；
+  maven.fabricmc.net 上也没有 26.3 的 intermediary（404）。
+  因此 loom.officialMojangMappings() 必然报
+  “Failed to find official mojang mappings for 26.3”。
+  解决办法：恒等映射 mappings/identity.tiny（official 与 named 同名），并用
+    mappings loom.layered {
+       mappings(FileSpec.createFromFile(file('mappings/identity.tiny'))) {
+          fallbackNamespaces('official', 'named')
+       }
+    }
+  注意：file(...) 不是 builder 的方法，方法是 mappings(...) 且必须传 FileSpec 对象，
+  不能传字符串（会被当成 Maven 坐标）。
+  副作用：没有 intermediary 命名空间，remapSourcesJar 会失败，已在 build.gradle 中禁用。
+
+坑 C：JDK
+  26.3 的 javaVersion 是 25，用 JDK 21 直接报
+  “Dependency requires at least JVM runtime version 25”。
+  本机 jdk-25.0.3.9-hotspot 可用，构建前把 JAVA_HOME 指过去。
+
+-------------------------------------------------
+五、遗留事项
+-------------------------------------------------
+1. 可读性：已清理全部 varN 局部变量（14 处）；
+   已为 137 个源文件补作者信息与类级注释；
+   反编译固有的"无行内注释"问题仍存在，改动时请顺手补。
+2. 超大文件：已拆分完毕，当前最大 330 行，无超 350 行的文件。
+   · WorkerHandler 898 → 215 行（拆出 WorkerFarming / WorkerFishing /
+     WorkerWoodcutting / WorkerMining / WorkerTools / WorkerStorage）
+   · GhostWomanEntity 447 → 255 行（拆出 GhostChargeGoal / GhostMoveControl /
+     GhostRandomMoveGoal / GhostTargetPlayerGoal / GhostWomanGoalStats）
+   · 其余 280–330 行的类（TalismanPouchItem、FlyingSwordEntity、
+     StoneMillBlockEntity、WoodSwordItem、BronzeBellItem）经评估职责单一，
+     属物品/实体/方块实体的正常体量，刻意不再拆分。
+3. 硬编码：已消除 7 个文件里的 "jiangshidao" 字面量，统一走
+   JiangshiDao.MOD_ID / JiangshiDao.id()。
+   仅 PersistentData 里的 NBT 键 "JiangshiDao" 保留（那是存档数据键，不是命名空间）。
+4. 多语言：zh_cn / en_us 各 171 键，键集合完全一致、无缺失、无未翻译残留。
+   新增文本需同步两份。
+5. 未验证项：本工程验证到"可编译、可 build、产物条目与原成品对应"，
+   尚未在 26.3-Fabric 实例内实跑（runClient 需下载 assets）。
+

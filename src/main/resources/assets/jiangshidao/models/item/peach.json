@@ -1,0 +1,7 @@
+{
+  "credit": "作者：黑山大叔  主页：https://space.bilibili.com/19428259  GitHub：https://github.com/heiheids",
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "jiangshidao:item/peach"
+  }
+}

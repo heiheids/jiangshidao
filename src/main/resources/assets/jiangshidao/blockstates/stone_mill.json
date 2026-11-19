@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "upper=false": {
+      "model": "jiangshidao:block/stone_mill"
+    },
+    "upper=true": {
+      "model": "jiangshidao:block/stone_mill_upper"
+    }
+  }
+}

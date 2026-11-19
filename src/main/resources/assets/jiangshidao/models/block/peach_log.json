@@ -1,0 +1,1 @@
+{ "parent": "minecraft:block/cube_column", "textures": { "end": "jiangshidao:block/peach_log_top", "side": "jiangshidao:block/peach_log" } }

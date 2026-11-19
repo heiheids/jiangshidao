@@ -1,0 +1,64 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "#minecraft:is_overworld",
+  "spawners": [
+    {
+      "type": "jiangshidao:teal_jiangshi",
+      "weight": 30,
+      "count": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 2
+      }
+    },
+    {
+      "type": "jiangshidao:purple_jiangshi",
+      "weight": 30,
+      "count": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 2
+      }
+    },
+    {
+      "type": "jiangshidao:yellow_jiangshi",
+      "weight": 20,
+      "count": {
+        "type": "minecraft:constant",
+        "value": 1
+      }
+    },
+    {
+      "type": "jiangshidao:brute_jiangshi",
+      "weight": 8,
+      "count": {
+        "type": "minecraft:constant",
+        "value": 1
+      }
+    },
+    {
+      "type": "jiangshidao:ghost_woman",
+      "weight": 12,
+      "count": {
+        "type": "minecraft:constant",
+        "value": 1
+      }
+    },
+    {
+      "type": "jiangshidao:ghost_woman_red",
+      "weight": 8,
+      "count": {
+        "type": "minecraft:constant",
+        "value": 1
+      }
+    },
+    {
+      "type": "jiangshidao:ghost_woman_white",
+      "weight": 8,
+      "count": {
+        "type": "minecraft:constant",
+        "value": 1
+      }
+    }
+  ]
+}

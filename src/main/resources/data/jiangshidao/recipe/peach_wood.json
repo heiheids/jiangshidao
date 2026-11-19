@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "jiangshidao:peach_log"
+  },
+  "result": {
+    "id": "jiangshidao:peach_wood",
+    "count": 3
+  }
+}

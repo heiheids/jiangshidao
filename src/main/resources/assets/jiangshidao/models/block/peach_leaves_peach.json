@@ -1,0 +1,64 @@
+{
+  "credit": "作者：黑山大叔  主页：https://space.bilibili.com/19428259  GitHub：https://github.com/heiheids",
+  "parent": "minecraft:block/block",
+  "textures": {
+    "all": "jiangshidao:block/peach_leaves",
+    "peach": "jiangshidao:block/peach_leaves_peach",
+    "particle": "jiangshidao:block/peach_leaves"
+  },
+  "elements": [
+    {
+      "name": "leaves",
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "down": { "uv": [0, 0, 16, 16], "texture": "#all", "tintindex": 0, "cullface": "down" },
+        "up": { "uv": [0, 0, 16, 16], "texture": "#all", "tintindex": 0, "cullface": "up" },
+        "north": { "uv": [0, 0, 16, 16], "texture": "#all", "tintindex": 0, "cullface": "north" },
+        "south": { "uv": [0, 0, 16, 16], "texture": "#all", "tintindex": 0, "cullface": "south" },
+        "west": { "uv": [0, 0, 16, 16], "texture": "#all", "tintindex": 0, "cullface": "west" },
+        "east": { "uv": [0, 0, 16, 16], "texture": "#all", "cullface": "east" }
+      }
+    },
+    {
+      "name": "peach_north",
+      "from": [4, 3, -0.02],
+      "to": [12, 11, 0.02],
+      "faces": {
+        "north": { "uv": [0, 0, 16, 16], "texture": "#peach" }
+      }
+    },
+    {
+      "name": "peach_south",
+      "from": [4, 3, 15.98],
+      "to": [12, 11, 16.02],
+      "faces": {
+        "south": { "uv": [0, 0, 16, 16], "texture": "#peach" }
+      }
+    },
+    {
+      "name": "peach_west",
+      "from": [-0.02, 3, 4],
+      "to": [0.02, 11, 12],
+      "faces": {
+        "west": { "uv": [0, 0, 16, 16], "texture": "#peach" }
+      }
+    },
+    {
+      "name": "peach_east",
+      "from": [15.98, 3, 4],
+      "to": [16.02, 11, 12],
+      "faces": {
+        "east": { "uv": [0, 0, 16, 16], "texture": "#peach" }
+      }
+    },
+    {
+      "name": "peach_up",
+      "from": [4, 15.98, 4],
+      "to": [12, 16.02, 12],
+      "faces": {
+        "up": { "uv": [0, 0, 16, 16], "texture": "#peach" }
+      }
+    }
+  ]
+}

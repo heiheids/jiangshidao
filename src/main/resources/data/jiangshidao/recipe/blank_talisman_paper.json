@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "jiangshidao:sulfur_powder",
+    "minecraft:paper"
+  ],
+  "result": {
+    "id": "jiangshidao:blank_talisman_paper",
+    "count": 1
+  }
+}

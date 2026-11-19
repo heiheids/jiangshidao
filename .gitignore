@@ -1,0 +1,41 @@
+# ── 构建产物 ──
+build/
+out/
+classes/
+
+# ── Gradle 缓存与本地配置 ──
+.gradle/
+local.properties
+
+# ── 运行目录（开发测试用，含存档与日志） ──
+run/
+logs/
+*.log
+
+# ── IDE ──
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# ── 操作系统 ──
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ── 本地备份与预览图（体积大，仅保留在本地） ──
+备份/
+预览图/
+
+# ── 历史成品 jar（源码已完整可构建，不再随仓库分发二进制） ──
+mod/
+
+# ── 临时文件 ──
+*.tmp
+*.bak
+*.orig
+*.rej

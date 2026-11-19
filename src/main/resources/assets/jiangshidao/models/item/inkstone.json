@@ -1,0 +1,10 @@
+{
+  "parent": "jiangshidao:block/inkstone",
+  "display": {
+    "gui": {
+      "rotation": [30, 225, 0],
+      "translation": [0, 5, 0],
+      "scale": [1.25, 1.25, 1.25]
+    }
+  }
+}

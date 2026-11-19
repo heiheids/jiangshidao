@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y": { "model": "jiangshidao:block/tian_fa_lei_ji_mu" },
+    "axis=z": { "model": "jiangshidao:block/tian_fa_lei_ji_mu_horizontal", "x": 90 },
+    "axis=x": { "model": "jiangshidao:block/tian_fa_lei_ji_mu_horizontal", "x": 90, "y": 90 }
+  }
+}

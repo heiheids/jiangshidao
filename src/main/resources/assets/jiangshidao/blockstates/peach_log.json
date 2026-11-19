@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y": { "model": "jiangshidao:block/peach_log" },
+    "axis=z": { "model": "jiangshidao:block/peach_log_horizontal", "x": 90 },
+    "axis=x": { "model": "jiangshidao:block/peach_log_horizontal", "x": 90, "y": 90 }
+  }
+}

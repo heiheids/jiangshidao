@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "P",
+    "P",
+    "L"
+  ],
+  "key": {
+    "P": "jiangshidao:tian_fa_lei_ji_mu_planks",
+    "L": "jiangshidao:tian_fa_lei_ji_mu"
+  },
+  "result": {
+    "id": "jiangshidao:tian_fa_lei_ji_mu_sword",
+    "count": 1
+  }
+}

@@ -1,0 +1,71 @@
+plugins {
+    id 'fabric-loom' version "${loom_version}"
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    maven { name = 'Aliyun'; url = 'https://maven.aliyun.com/repository/public' }
+    maven { name = 'Fabric'; url = 'https://maven.fabricmc.net/' }
+    mavenCentral()
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    // 26.3 起游戏本体不再混淆（官方版本清单只提供 client / server，无 mappings 文件），
+    // 因此使用恒等映射：official 与 named 同名，named jar 即为官方 jar，
+    // 源码中的 net.minecraft.* 官方名字可直接对应。
+    mappings loom.layered {
+        mappings(net.fabricmc.loom.api.mappings.layered.spec.FileSpec.createFromFile(
+            file('mappings/identity.tiny'))) {
+            fallbackNamespaces('official', 'named')
+        }
+    }
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+}
+
+processResources {
+    inputs.property 'version', project.version
+    inputs.property 'loader_version', project.loader_version
+    inputs.property 'minecraft_version_range', project.minecraft_version_range
+    filesMatching('fabric.mod.json') {
+        expand(
+            version: project.version,
+            loader_version: project.loader_version,
+            minecraft_version_range: project.minecraft_version_range,
+            mod_author: project.mod_author,
+            mod_homepage: project.mod_homepage,
+            mod_github: project.mod_github
+        )
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = 'UTF-8'
+    it.options.release = project.java_version as Integer
+}
+
+java {
+    // 26.3 使用恒等映射，没有 intermediary 命名空间，remapSourcesJar 无法工作，
+    // 因此不生成 sources jar（源码随工程本身提供，无需随产物发布）。
+    sourceCompatibility = JavaVersion.toVersion(project.java_version)
+    targetCompatibility = JavaVersion.toVersion(project.java_version)
+}
+
+// 恒等映射下无 intermediary 命名空间，显式关闭源码 jar 的 remap 任务。
+tasks.matching { it.name == 'remapSourcesJar' }.configureEach {
+    enabled = false
+}
+
+jar {
+    from('LICENSE') {
+        rename { "${it}_${project.base.archivesName.get()}" }
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "has_peach=false": { "model": "jiangshidao:block/peach_leaves" },
+    "has_peach=true": { "model": "jiangshidao:block/peach_leaves_peach" }
+  }
+}

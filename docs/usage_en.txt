@@ -1,0 +1,73 @@
+Jiangshi Zombie Mod — Usage Guide (English)
+=================================================
+Author: 黑山大叔 (Heishan Dashu)
+Homepage: https://space.bilibili.com/19428259
+GitHub: https://github.com/heiheids
+
+Target: Minecraft 1.21.1 / NeoForge
+Version: v0.1.0 — MODEL PREVIEW ONLY (no .jar yet)
+
+-------------------------------------------------
+1. What is in this version
+-------------------------------------------------
+A full blocky model of a Qing-dynasty-official zombie ("Jiangshi"),
+built from 39 boxes / 234 faces:
+
+  * Head: green zombie block head, sunken black eye sockets,
+    uneven yellow teeth, square ears
+  * Hat: wide black brim + red dome + gold finial base + red knob
+  * Body: teal silk robe, dark-red front trim, black belt,
+    gold-framed rank badge ("buzi") with a crane motif on the chest
+  * Arms: BOTH arms extended forward at 84 degrees (classic zombie pose),
+    dark-red cuffs, three hooked fingers per hand
+  * Legs: tall black boots, robe hem covering the boot tops
+
+Palette matches the reference image:
+  teal #3F5A55 / dark red #762E38 / zombie green #6EA650
+  black #23262A / gold #B8994C
+
+-------------------------------------------------
+2. How to view the 3D render
+-------------------------------------------------
+Option A — just look at the images (recommended):
+  Open out\preview\:
+    preview_sheet.png   five-view contact sheet
+    1-front.png, 2-three-quarter.png, 3-side.png, 4-back.png, 5-face.png
+    atlas.png           procedurally generated skin atlas
+
+Option B — render it yourself:
+  Requires Node.js 18+. No internet, no npm install, no dependencies.
+    cd <project folder>
+    node tools/render/render.js --size 1024
+  Output goes to out\preview\.
+    --size  canvas edge length (default 1024)
+    Camera angles live in the VIEWS array in tools\render\render.js
+    (yaw = horizontal angle, pitch = vertical angle)
+
+-------------------------------------------------
+3. How to change the look
+-------------------------------------------------
+  Shape / proportions  -> tools\model\model.js  (each part is a [min,max] box)
+  Colors               -> tools\art\palette.js
+  Texture details      -> tools\art\texture.js  (face, badge, fabric each
+                          have their own function)
+
+All three are plain data / plain drawing code. Edit, re-render, done.
+
+-------------------------------------------------
+4. Roadmap (after you approve the model)
+-------------------------------------------------
+  1. Generate the Java EntityModel + a 128x128 atlas from the SAME box data
+  2. Entity registration, attributes, zombie-style AI with forward-arm pose
+  3. zh_cn + en_us language files that follow the game language automatically
+  4. Drops, spawn rules, sounds
+  5. Package everything into a drop-in .jar for the mods folder
+
+-------------------------------------------------
+5. Notes
+-------------------------------------------------
+  * This version contains no .class or .jar files; it cannot be loaded
+    into the game. It exists only to confirm the model's look.
+  * Every temporary file and render output stays inside the project folder.
+  * Source is backed up to the 备份\ folder before every modification;
+    see 某某工程备份.txt for the operation log.

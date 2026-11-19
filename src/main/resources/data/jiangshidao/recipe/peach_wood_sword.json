@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "P",
+    "P",
+    "L"
+  ],
+  "key": {
+    "P": "jiangshidao:peach_planks",
+    "L": "jiangshidao:peach_log"
+  },
+  "result": {
+    "id": "jiangshidao:peach_wood_sword",
+    "count": 1
+  }
+}

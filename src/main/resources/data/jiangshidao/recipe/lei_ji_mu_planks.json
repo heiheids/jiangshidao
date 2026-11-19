@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    [
+      "jiangshidao:lei_ji_mu"
+    ]
+  ],
+  "result": {
+    "id": "jiangshidao:lei_ji_mu_planks",
+    "count": 4
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "jiangshidao",
+  "version": "${version}",
+  "name": "僵尸道 Jiangshi Dao",
+  "description": "东方僵尸题材的怪物与符箓体系。作者：${mod_author}",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contact": {
+    "homepage": "${mod_homepage}",
+    "sources": "${mod_github}"
+  },
+  "license": "MIT",
+  "icon": "assets/jiangshidao/icon.png",
+  "environment": "*",
+  "mixins": [
+    "jiangshidao.mixins.json"
+  ],
+  "entrypoints": {
+    "main": [
+      "com.heishan.jiangshidao.JiangshiDaoFabric"
+    ],
+    "client": [
+      "com.heishan.jiangshidao.client.JiangshiDaoFabricClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version_range}"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jiangshidao:block/inkstone"
+    },
+    "facing=east": {
+      "model": "jiangshidao:block/inkstone",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jiangshidao:block/inkstone",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jiangshidao:block/inkstone",
+      "y": 270
+    }
+  }
+}

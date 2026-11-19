@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.heishan.jiangshidao.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ConversionTrackerMixin",
+    "EntityDoubleDropMixin",
+    "FarmlandTrampleMixin",
+    "LivingEntityDoubleDropMixin",
+    "LivingEntitySubduedMixin",
+    "MobTargetSuppressMixin",
+    "ZombieConversionMixin",
+    "ZombieVillagerCureMixin"
+  ],
+  "client": [
+    "ContainerScreenAccess",
+    "MinecraftUseItemMixin",
+    "MouseHandlerScrollMixin",
+    "client.LivingEntityRenderStateMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "textures": {
+    "particle": "jiangshidao:block/blank_talisman_paper",
+    "paper": "jiangshidao:block/blank_talisman_paper"
+  },
+  "elements": [
+    {
+      "from": [4, 0, 0],
+      "to": [12, 1, 16],
+      "faces": {
+        "up":    { "uv": [0, 0, 16, 16], "texture": "#paper" },
+        "north": { "uv": [0, 15, 16, 16], "texture": "#paper" },
+        "south": { "uv": [0, 15, 16, 16], "texture": "#paper" },
+        "west":  { "uv": [0, 15, 16, 16], "texture": "#paper" },
+        "east":  { "uv": [0, 15, 16, 16], "texture": "#paper" }
+      }
+    }
+  ]
+}
